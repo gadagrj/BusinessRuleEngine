@@ -8,7 +8,9 @@ namespace BusinessRuleEngine.RuleEngine.Models.Constants
     {
         BOOK = 1, 
         VIDEO = 2, 
-        Physical = 3,
+        PRODUCT_PHYSICAL =3,
+        BOOKORPHYSICAL =4
+
         
     }
 }

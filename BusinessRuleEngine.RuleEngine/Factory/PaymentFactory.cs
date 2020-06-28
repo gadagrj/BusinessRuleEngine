@@ -9,7 +9,7 @@ namespace BusinessRuleEngine.RuleEngine.Factory
 {
     public class PaymentFactory
     {
-        public static IOrderProcess GetPaymentObject(PaymentType type)
+        public static IOrderProcess GetOrderProcessor(PaymentType type)
         {
             IOrderProcess _processOrder=null;
             switch (type)
@@ -22,6 +22,9 @@ namespace BusinessRuleEngine.RuleEngine.Factory
                     break;
                 case PaymentType.MEMBERSHIP:
                     _processOrder = new SubscriptionProcessor();
+                    break;
+                case PaymentType.BOOKORPHYSICAL:
+                    _processOrder = new PhysicalOrBookProcessor();
                     break;
                 case PaymentType.VIDEO:
                     _processOrder = new VideoProcesssor();

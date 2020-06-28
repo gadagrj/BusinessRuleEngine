@@ -6,9 +6,10 @@ namespace BusinessRuleEngine.RuleEngine.Models.Constants
 {
     public enum PaymentType
     {
-        PHYSICAL_PRODUCT = 1 , 
-        BOOK = 2, 
-        MEMBERSHIP = 3, 
-        VIDEO = 4 
+        BOOK = 1,
+        VIDEO = 2,
+        PHYSICAL_PRODUCT = 3,
+        BOOKORPHYSICAL = 4,
+        MEMBERSHIP = 5,
     }
 }

@@ -22,7 +22,7 @@ namespace BusinessRuleEngine.RuleEngine.Handlers
         private IOrderProcess GetHandlerByPaymentType(PaymentType options)
         {
             IOrderProcess handler;
-            handler = PaymentFactory.GetPaymentObject(options);
+            handler = PaymentFactory.GetOrderProcessor(options);
             return handler;
         }
     }
